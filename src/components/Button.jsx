@@ -5,8 +5,10 @@ const BackHome =() => {
     const navigate = useNavigate ();
     const selector = useSelector ((state) => state.getJob.favorite.length)
     return(
+        <>
     <Button variant="success" onclick={() => navigate("/")}>Home</Button>
-    <Button variant="success" onclick></Button>
+    <Button variant="success" onclick={()=> navigate("listfavorite")}><span>{selector}</span></Button>
+    </>
     )
 }
 export default BackHome;

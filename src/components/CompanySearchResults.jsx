@@ -12,7 +12,7 @@ const CompanySearchResults = () => {
 
   useEffect(() => {
     getJobs()
-  }, [])
+  }, )
 
   const getJobs = async () => {
     try {
